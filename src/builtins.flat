@@ -3,13 +3,13 @@
 # provides derived built-ins, so as much of the language is built in itself as feasible
 
 # turn a command into a verb
-# cmd-verb 'foo' args1...:
-#    foo args1... args2...
-# -> cmd 'foo' args1... args2...
-verb 'cmd-verb' cmd
+# cmd-verb 'foo':
+#    foo args...
+# -> cmd 'foo' args
+verb 'cmd-verb' verb \1 cmd \1
 
-verbs[cmd-make]='cmd-verb'
-cmd-verb() { verbs["$1"]="$2"; }
+#verbs[cmd-make]='cmd-verb'
+#cmd-verb() { verbs["$1"]="$2"; }
 
 # printf is a shell builtin
 cmd-verb 'printf'

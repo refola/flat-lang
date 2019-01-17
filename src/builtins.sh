@@ -5,13 +5,14 @@
 # verb my-verb base-verb args1...:
 #    my-verb args2...
 # -> base-verb args1... args2...
-verbs[verb]='verb'
-verb() {
-    local v="$1"
-    shift
-    verbs["$v"]="$@"
-}
+set-verb-function verb set-verb
+#verbs[verb]='set-verb'
 
 # run a command
-verbs[cmd]='cmd'
+set-verb-function cmd cmd
+#verbs[cmd]='cmd'
 cmd() { "$@"; }
+
+# set a string variable
+set-verb-function string set-string
+#verbs[string]='set-string'
