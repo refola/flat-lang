@@ -1,0 +1,2 @@
+#!/usr/bin/env flat
+printf 'hello flat\n'
