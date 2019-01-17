@@ -2,8 +2,10 @@
 
 flat-lang is an unindented "one line at a time" imperative programming
 language built as an experiment in making an "unstructured" language
-with even less syntax than Lisps, just to see how far I can get and
-how quickly.
+with even less syntax than Lisps. my goal is to see how far I can get
+and how quickly, while making a borderline-uselessly simple language,
+as a sort of personal "worst effort" at trying to make programming
+language stuff.
 
 
 # syntax
@@ -18,6 +20,9 @@ syntax.
 - `{curly brackets}` denote descriptions of what must be there
 - everything else in formal syntax denotes its literal self,
   particularly in examples
+- in keeping with the spirit of this intentionally being my worst
+  programming language-building effort ever, i'm not even bothering to
+  capitalize anything in natural language content
 
 ## flat syntax
 
